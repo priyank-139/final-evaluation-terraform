@@ -9,7 +9,7 @@ listener "tcp" {
 }
 seal "awskms" {
   kms_key_id = "{{ kms }}"
-  region = "us-east-1"
+  region = "{{ kms_region }}"
 }
 api_addr = "http://{{ ansible_eth0.ipv4.address }}:8200"
 cluster_addr = "http://{{ ansible_eth0.ipv4.address }}:8201"

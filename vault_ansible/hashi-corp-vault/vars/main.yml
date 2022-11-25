@@ -13,6 +13,7 @@
                           -  "unzip"
                       
  kms: "e35e898d-4ffc-40a1-9d49-ab6c71827e52"  
+ kms_region: "us-west-1"   
  unseal_keys_dir_output: "/opt/unseal"
  root_token_dir_output: "/opt/unseal"  
  unseal_keys_dir_output_file_key-shares: "/opt/unseal/token.txt"  
