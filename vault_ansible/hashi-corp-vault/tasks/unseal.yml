@@ -10,7 +10,7 @@
            vault operator init >> /opt/unseal/key.txt 
         when: inventory_hostname_short == "node1"
 
-      - name: Pause for 2 seconds to generate key shares and root token
+      - name: Pause for 10 seconds to generate key shares and root token
         ansible.builtin.pause:
          seconds: 10
 
@@ -54,7 +54,7 @@
         when: inventory_hostname_short == 'node1'
         run_once: true
     
-      - name: Pause for 2 seconds to generate key shares and root token
+      - name: Pause for 5 seconds to generate key shares and root token
         ansible.builtin.pause:
          seconds: 5
 
